@@ -1,0 +1,10 @@
+docker build -t main .
+docker run -it main
+
+bash main.sh az az.az 3Mb
+
+goaccess -j logs/log1.txt -o report.html
+
+goaccess -f logs/log1.txt -o report.html --log-format=COMBINED
+
+find / -newermt "230210 10:30" ! -newermt "230210 10:41" | sort -r

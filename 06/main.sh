@@ -1,0 +1,1 @@
+echo `LC_TIME="en_US.UTF-8" bash -c 'goaccess logs/log1.txt --log-format=COMBINED -o report.html'`
